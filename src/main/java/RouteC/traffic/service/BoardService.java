@@ -16,7 +16,7 @@ public class BoardService {
     /**
      * 게시글 리스트 처리
      */
-    public List<Board> gerAllBoard(){
+    public List<Board> getAllBoard(){
         return boardRepository.findAll();
     }
 
