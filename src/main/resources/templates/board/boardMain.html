@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Board Page</title>
+</head>
+
+<style>
+    .layout {
+        width: 800px;
+        margin : 0 auto;
+        margin-top: 40px;
+    }
+    .layout input {
+        width: 35%;
+        height: 120%;
+        box-sizing: border-box;
+    }
+    .layout textarea {
+        width: 100%;
+        min-height: 300px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+<div class="layout">
+
+    <form th:action="@{/templates/board}" method="get">
+        <input class="input" type="text" name="searchKeyword">
+        <!-- <button type="submit">검색</button> -->
+    </form>
+
+    <br><br>
+    <tr th:each="board : ${board}">
+        <td th:text="${board}"></td>
+        <a th:href="@{/board/view(id = ${board.id})}">이동</a>
+        <br>
+    </tr>
+</div>
+</body>
+</html>
