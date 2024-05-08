@@ -17,20 +17,21 @@ public class BoardController {
 
     @GetMapping("/board")
     public String boardPage(Model model, String searchKeyword) {
-        return "main";
+        return "board/main";
     }
 
+    @GetMapping("/board/list")
     public String boardList(Model model, String searchKeyword) {
-        return "list";
+        return "board/list";
     }
 
     @GetMapping("/board/write")
     public String boardWriterForm() {
-        return "write";
+        return "board/write";
     }
 
     @GetMapping("/board/view")
     public String boardView(Model model, Integer id) {
-        return "view";
+        return "board/view";
     }
 }
