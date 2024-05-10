@@ -2,10 +2,10 @@ package RouteC.traffic.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
+// import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.LocalDateTime;
+// import java.time.LocalDateTime;
 
 @EntityListeners(AuditingEntityListener.class) // CreatedDate 사용하기 위해 추가
 @Entity // Entity는 db에 있는 테이블을 의미
@@ -24,8 +24,8 @@ public class Board {
 
     private String filepath;
 
-    @CreatedDate
-    private LocalDateTime updatedDatetime;
+    // @CreatedDate
+    // private LocalDateTime updated_datetime;
 
     @Column(columnDefinition = "integer default 0", nullable = false)
     private int view;
