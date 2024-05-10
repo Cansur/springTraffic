@@ -61,9 +61,9 @@
             <td>
                 <a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}"></a>
             </td>
-            <td>
-                <a th:text="${#temporals.format(board.updatedDatetime, 'yyyy-MM-dd HH:mm:ss')}"></a>
-            </td>
+            <!-- <td>
+                <a th:text="${#temporals.format(board.updated_datetime, 'yyyy-MM-dd HH:mm:ss')}"></a>
+            </td> -->
             <td>
                 <a th:text="${board.view}"></a>
             </td>
