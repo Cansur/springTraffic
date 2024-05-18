@@ -1,4 +1,4 @@
-package RouteC.traffic.domain;
+package RouteC.farm.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
