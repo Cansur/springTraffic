@@ -1,6 +1,6 @@
-package RouteC.traffic.repository;
+package RouteC.farm.repository;
 
-import RouteC.traffic.domain.Board;
+import RouteC.farm.domain.Board;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

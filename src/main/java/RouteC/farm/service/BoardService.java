@@ -1,7 +1,7 @@
-package RouteC.traffic.service;
+package RouteC.farm.service;
 
-import RouteC.traffic.domain.Board;
-import RouteC.traffic.repository.BoardRepository;
+import RouteC.farm.domain.Board;
+import RouteC.farm.repository.BoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
