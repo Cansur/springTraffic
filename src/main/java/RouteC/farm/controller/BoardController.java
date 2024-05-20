@@ -21,11 +21,6 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping("/board")
-    public String boardMain() {
-        return "board/main";
-    }
-
     @GetMapping("/board/list")
     public String boardList(Model model,
                             @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable,

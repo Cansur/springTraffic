@@ -1,5 +1,0 @@
-- ls(4가지 옵션), mkdir, rmdir, cd, cp(2가지 옵션), rm, pwd
-- gcc 컴파일러 구성(4가지 옵션), vi editor(4가지 모드, 넘어가는 단축키*, 종료키, 여러 단축키)
-- makefile 구성내용, make macro, File I/O(4가지 모드, lseek*, 코드해석*)
-- fork(코드 위주, Orphan Process, Zombie Process), wait*(orphan, zombie 막기위한 방법, 코드 위주)
-- exec(개념, execl, execv, 코드위주)
