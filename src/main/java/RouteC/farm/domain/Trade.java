@@ -1,6 +1,8 @@
 package RouteC.farm.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
@@ -9,5 +11,10 @@ import lombok.Data;
 public class Trade {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    private String item;
+
+    private double currentPrice;
 }
